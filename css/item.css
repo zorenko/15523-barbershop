@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: " ";
+  height: 0;
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+body{
+  min-width: 1000px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a, p, h1, li{
+  font-weight:bold;
+  text-transform: uppercase;
+}
+a{
+  text-decoration: none;
+}
+
+
+
+header {
+  background: #000;
+}
+header a,
+footer a {
+  color: #fff
+}
+header a {
+  display: block;
+  padding: 25px 20px;
+  font-size: 16px;
+}
+.main-nav {
+  float: left;
+  width: 660px;
+}
+.main-nav li {
+  display: inline-block;
+  vertical-align: top;
+}
+.main-nav a:hover {
+  background: #242424;
+}
+
+.main-nav .active a {
+  position: relative;
+}
+
+.main-nav .active a:hover {
+  background: none;
+}
+
+.main-nav .active a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 5px;
+  background: #fff;
+}
+.user {
+  position: relative;
+  float: right;
+  padding-left: 50px;
+}
+.user:hover {
+  background: #242424;
+}
+.user::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+  background: url("../img/sprite.png"), no-repeat 0 0;
+}
+.user:hover:before {
+  opacity: .3;
+}
+
+
+.main{
+  background: #f9f6f3 url('../img/bg-content.png');
+  padding: 54px 0 47px;
+}
+.sub-header{
+  margin-bottom: 60px;
+}
+h1{
+  font-size:30px;
+  margin-bottom: 32px;
+  line-height: 30px;
+}
+.breadcrumbs a,
+.breadcrumbs p{
+  display:inline-block;
+  margin-right: 10px;
+  font-size:14px; 
+  vertical-align: top;
+}
+.breadcrumbs a{
+  color: #000;
+}
+.breadcrumbs p{
+  color: #aba9a7;
+}
+
+
+
+
+.left-column{
+  width: 460px;
+  float: left;
+}
+.active-pic img{
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px 0 rgba(0,1,1,0.2);
+}
+.small-pic a{
+  float: left;
+  margin-right: 20px;
+  box-shadow: 0 0 15px 0 rgba(0,1,1,0.2);
+}
+.small-pic :last-child{
+  margin-right: 0;
+}
+
+
+
+.right-column{
+  float: right;
+  width: 390px;
+  padding-top: 24px;
+}
+.right-column p,
+.right-column li,
+.right-column a {
+  font-size: 14px;
+}
+.info-status {
+  float: left;
+  width: 140px;
+}
+.info-marking {
+  float: right;
+  width: 140px;
+  color: #aeaeae;
+}
+.content-description {
+  padding: 43px 0;
+  line-height: 24px;
+}
+.content-button {
+  width: 187px;
+  background: #e5e5e5;
+}
+.content-button p,
+.btn-buy {
+  padding: 17px 0;
+  text-align: center;
+}
+.content-button p {
+  float: left;
+  width: 110px;
+}
+.btn-buy{
+  float: right;
+  width: 77px;
+  background: #000;
+  color: #fff;
+}
+.btn-buy:hover{
+  background: #663d15;
+}
+.content-title{
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+p.content-title{
+  font-size: 24px;
+}
+.content-list li{
+  margin: 0 0 14px 15px;
+}
+
+
+
+footer {
+  padding: 63px 0 44px;
+  background:#222 url('../img/bg-footer.png');
+}
+footer p,
+footer a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-contacts {
+  width:310px;
+  float:left;
+  margin-right: 90px;
+}
+.footer-contacts a {
+  text-decoration: underline;
+}
+.footer-contacts a:hover {
+  text-decoration: none;
+}
+.footer-buttons {
+  float: left;
+  width: 141px;
+}
+.footer-buttons,
+.footer-copyright {
+  text-align: center;
+}
+.footer-buttons p,
+.footer-copyright p {
+  margin-bottom: 24px;
+}
+.footer-buttons a,
+.footer-copyright a {
+  margin-bottom: 7px;
+}
+.social-btn {
+  margin-right: 6px;
+  float: left;
+  vertical-align: top;
+  width: 43px;
+  height: 43px;
+  padding: 5px;
+  font-size: 0;
+  text-decoration: none;
+  background: #000 url('../img/sprite.png') no-repeat ;
+}
+.social-btn:last-child {
+  margin: 0;
+}
+.social-btn:hover {
+  background-color: #fff;
+}
+.social-btn-vk {
+  background-position: -52px 15px;
+}
+.social-btn-fb {
+  background-position: -91px 10px;
+}
+.social-btn-inst {
+  background-position: -132px 12px;
+}
+.social-btn-vk:hover {
+  background-position: -180px 15px;
+}
+.social-btn-fb:hover {
+  background-position: -230px 10px;
+}
+.social-btn-inst:hover {
+  background-position: -267px 12px;
+}
+.footer-copyright {
+  float: right;
+  width: 140px;
+}
+.footer-copyright a {
+  padding: 15px 30px;
+  background-color: #000;
+}
+.footer-copyright a:hover {
+  background-color: #fff;
+  color:#000;
+}

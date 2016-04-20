@@ -1,0 +1,361 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: " ";
+  height: 0;
+  clear: both;
+  display: block;
+  overflow: hidden;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+body {
+  min-width: 960px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background: #070707 url('../img/bg.jpg') no-repeat 0 0;
+}
+a, p, li, .features-title, h1, h2{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+}
+
+
+header {
+  background: #000;
+}
+header a,
+footer a {
+  color: #fff
+}
+header a {
+  display: block;
+  padding: 25px 20px;
+  font-size: 16px;
+}
+.main-nav {
+  float: left;
+  width: 660px;
+}
+.main-nav li {
+  display: inline-block;
+  vertical-align: top;
+}
+.main-nav a:hover {
+  background: #242424;
+}
+
+.main-nav .active a {
+  position: relative;
+}
+
+.main-nav .active a:hover {
+  background: none;
+}
+
+.main-nav .active a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  height: 5px;
+  background: #fff;
+}
+.user {
+  position: relative;
+  float: right;
+  padding-left: 50px;
+}
+.user:hover {
+  background: #242424;
+}
+.user::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+  background: url("../img/sprite.png"), no-repeat 0 0;
+}
+.user:hover:before {
+  opacity: .3;
+}
+
+.main-container {
+  padding: 60px 0 65px;
+}
+.logo {
+  width: 368px;
+  height: 204px;
+  margin: 0 auto;
+  margin-bottom: 30px; 
+}
+.logo img {
+  width: 368px;
+  height: 204px;
+}
+.features-row {
+  margin-bottom: 85px;
+}
+.features-item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  text-align: center;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+.features-item p,
+.features-title{
+  color: #fff;
+}
+.features-item p{
+  font-size: 14px;
+  line-height: 24px;
+}
+.features-title {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
+  font-size: 30px;
+}
+.features-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.index-content {
+  margin-bottom: 35px;
+  background: url('../img/shadow.png') no-repeat center, 
+              #f9f6f3 url('../img/bg-content.png');
+  padding: 55px 80px;
+}
+.index-content h2{
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+.index-content p,
+.index-content li{
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+.index-content li{
+  list-style: none;
+}
+.index-content time{
+  font-weight: normal;
+  text-transform: none;
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 33px;
+  margin-right: 16px;
+  font-size: 14px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:active {
+  background: #663d15;
+}
+.btn:disabled {
+  cursor: default;
+  opacity: .5;
+}
+.btn:disabled:hover {
+  background: #000;
+}
+.index-content .btn:last-of-type{
+  margin-right: 0;
+}
+.content-column-left {
+  width: 350px;
+  float: left;
+}
+.content-column-right {
+  width: 300px;
+  float: right;
+}
+.gallery {
+  position: relative;
+  height: 260px;
+}
+.gallery-content {
+  height: 164px;
+  margin: 0;
+  border: 7px solid white;
+  background: #ccc;
+}
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  margin: 0;
+}
+.gallery-prev {
+  left: 0;
+}
+.gallery-next {
+  right: 0;
+}
+.main-contacts{
+  width: 350px;
+}
+.main-contacts p:last-of-type{
+  padding-bottom: 0;
+}
+.main-contacts .btn{
+  margin-top: 51px;
+}
+.appointment-form form{
+  width: 300px;
+}
+.appointment-form input{
+  float: left;
+  width: 136px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background: #f9f6f3;
+  border: 2px solid #000;
+  outline: none;
+  color: #000;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.appointment-form  input:focus {
+  border: 2px solid #663d15;
+}
+.appointment-form  input:nth-child(2n) {
+  margin-right: 0;
+}
+.appointment-form .btn {
+  margin-top: 14px;
+  width: 100%
+}
+
+footer {
+  padding: 63px 0 44px;
+  background:#222 url('../img/bg-footer.png');
+}
+footer p,
+footer a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-contacts {
+  width:310px;
+  float:left;
+  margin-right: 90px;
+}
+.footer-contacts a {
+  text-decoration: underline;
+}
+.footer-contacts a:hover {
+  text-decoration: none;
+}
+.footer-buttons {
+  float: left;
+  width: 141px;
+}
+.footer-buttons,
+.footer-copyright {
+  text-align: center;
+}
+.footer-buttons p,
+.footer-copyright p {
+  margin-bottom: 24px;
+}
+.footer-buttons a,
+.footer-copyright a {
+  margin-bottom: 7px;
+}
+.social-btn {
+  margin-right: 6px;
+  float: left;
+  vertical-align: top;
+  width: 43px;
+  height: 43px;
+  padding: 5px;
+  font-size: 0;
+  text-decoration: none;
+  background: #000 url('../img/sprite.png') no-repeat ;
+}
+.social-btn:last-child {
+  margin: 0;
+}
+.social-btn:hover {
+  background-color: #fff;
+}
+.social-btn-vk {
+  background-position: -52px 15px;
+}
+.social-btn-fb {
+  background-position: -91px 10px;
+}
+.social-btn-inst {
+  background-position: -132px 12px;
+}
+.social-btn-vk:hover {
+  background-position: -180px 15px;
+}
+.social-btn-fb:hover {
+  background-position: -230px 10px;
+}
+.social-btn-inst:hover {
+  background-position: -267px 12px;
+}
+.footer-copyright {
+  float: right;
+  width: 140px;
+}
+.footer-copyright a {
+  padding: 15px 30px;
+  background-color: #000;
+}
+.footer-copyright a:hover {
+  background-color: #fff;
+  color:#000;
+}
+
+
